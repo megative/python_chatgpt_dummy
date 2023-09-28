@@ -3,8 +3,13 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 
 import openai
 
-TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
-openai.api_key = 'YOUR_OPENAI_API_KEY'
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.cfg')
+
+TOKEN = config['API_KEYS']['TOKEN']
+OPENAI_KEY = config['API_KEYS']['OPENAI_KEY']
 
 CHOOSING, TYPING_PROMPT = range(2)
 
