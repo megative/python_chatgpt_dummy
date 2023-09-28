@@ -1,5 +1,6 @@
 # python_chatgpt_dummy
 Just a Pyhton ChatGPT interacted dummy template project
+
 0. Get Telegram API token and ChatGPT API token (too lazy to google it) and create your telegram bot with @BotFather in Telegram. Get bot token. 
 Create config.env file in project root with following content:
 ``` [API_KEYS] ```
